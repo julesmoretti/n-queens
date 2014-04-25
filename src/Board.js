@@ -169,9 +169,9 @@
       for( var i = 0; i < n; i++ ){
 
         if( board[a][b] === 1 ){
-          if(b >= 0 || b < n ){
+          if( b >= 0 || b < n ){
             counter++;
-            if( counter > 1){
+            if( counter > 1 ){
               return true;
             }
           }
@@ -196,7 +196,7 @@
       var n = board.length;
 
       var start = 1 - n;
-      for(var i = start; i < n; i++ ){
+      for( var i = start; i < n; i++ ){
         if( this.hasMajorDiagonalConflictAt(i) ){
           return true;
         }
@@ -227,9 +227,9 @@
       for( var i = 0; i < n; i++ ){
 
         if( board[a][b] === 1 ){
-          if(b >= 0 || b < n ){
+          if( b >= 0 || b < n ){
             counter++;
-            if( counter > 1){
+            if( counter > 1 ){
               return true;
             }
           }
@@ -253,9 +253,9 @@
 
       var n = board.length;
 
-      var cap = (n * 2) - 2;
+      var cap = ( n * 2 ) - 2;
 
-      for(var i = 0; i < cap; i++ ){
+      for( var i = 0; i < cap; i++ ){
         if( this.hasMinorDiagonalConflictAt(i) ){
           return true;
         }
